@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './ibm.png';
 import './App.css';
+import UserForm from './UserForm';
+import SocialButtons from './SocialButtons';
 
 class App extends Component {
   constructor(props) {
@@ -22,17 +24,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          Message from our API: <b>{this.state.message}</b>
-        </p>
+      <div className='container'>
+        <div className='text-center'>
+          <img src={logo} className="img-fluid" alt="logo" style={{height: '35px'}}/>
+        </div>
+        <h2> Por favor, completa tus datos:</h2>
+        <UserForm />
+        <SocialButtons />
       </div>
     );
   }
 }
+
 
 export default App;
