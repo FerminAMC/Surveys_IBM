@@ -25,10 +25,10 @@ class App extends Component {
   render() {
     return (
       <div className='container'>
-        <div className='text-center'>
+        <div className='text-center my-3'>
           <img src={logo} className="img-fluid" alt="logo" style={{height: '35px'}}/>
         </div>
-        <h2> Por favor, completa tus datos:</h2>
+        <h2 className='header mb-4 ml-3'> Por favor, completa tus datos:</h2>
         <UserForm />
         <SocialButtons />
       </div>

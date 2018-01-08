@@ -6,13 +6,13 @@ export default class SocialButtons extends React.Component {
         return(
             <div className='row'>
                 <div className='col text-center'> 
-                    <FontAwesome name='facebook' />
+                    <FontAwesome name='facebook' className='s-icon'/>
                 </div>
                 <div className='col text-center'> 
-                    <FontAwesome name='twitter' />
+                    <FontAwesome name='twitter' className='s-icon'/>
                 </div>
-                <div className='col text-center'> 
-                    <FontAwesome name='linkedin' />
+                <div className='col text-center'>
+                    <FontAwesome name='linkedin' className='s-icon'/>
                 </div>
             </div>
         );

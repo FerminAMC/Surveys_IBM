@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+
 * {
   box-sizing: border-box;
-  font-family: ;
+  font-family: 'Roboto', sans-serif;
+  color: #4b4b4b;
 }
 
 body {
@@ -59,26 +62,6 @@ label {
   margin-top: .25rem;
 }
 
-button {
-  max-width: 150px;
-  margin: 20px 0;
-  padding: 12px 20px;
-  border-style: none;
-  border-radius: 5px;
-  background-color: #08c;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-  font-size: 17px;
-  font-weight: 500;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-  -webkit-appearance: none;
-}
-
-button:disabled {
-  opacity: .5;
-  cursor: not-allowed !important;
-}
 
 button + button {
   margin-left: .5rem;
@@ -90,3 +73,10 @@ button.outline {
   color: #555;
 }
 
+.s-icon  {
+  font-size: 30px;
+}
+
+.header {
+  font-family: 'Oswald', sans-serif;
+}

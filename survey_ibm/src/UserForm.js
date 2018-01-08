@@ -17,55 +17,50 @@ const InnerForm = props => {
   } = props;
   return (
     <form onSubmit={handleSubmit}>
-
-      <input
-        id="nombre"
-        placeholder="mi nombre"
-        type="text"
-        value={values.nombre}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        className= {errors.nombre && touched.nombre ? 'form-group text-input error' : 'form-group text-input'}
-      />
-      {errors.email &&
-      touched.email && <div className="input-feedback">{errors.nombre}</div>}
-
-      <input
-        id="email"
-        placeholder="mi correo"
-        type="text"
-        value={values.email}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        className={errors.email && touched.email ? 'form-group text-input error' : 'form-group text-input'}
-      />
-      {errors.email &&
-      touched.email && <div className="input-feedback">{errors.email}</div>}
-
-      <input
-        id="tel"
-        placeholder="mi teléfono"
-        type="tel"
-        value={values.email}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        className={errors.tel && touched.tel ? 'form-group text-input error' : 'form-group text-input'}
-      />
-      {errors.tel &&
-      touched.tel && <div className="input-feedback">{errors.tel}</div>}
-
-      <button
-        type="button"
-        className="outline"
-        onClick={handleReset}
-        disabled={!dirty || isSubmitting}
-      >
-        Reset
-      </button>
-      <button type="submit" disabled={isSubmitting}>
-        Submit
-      </button>
-    </form>
+        <div className='form-group'>
+            <input
+                id="nombre"
+                placeholder="mi nombre"
+                type="text"
+                value={values.nombre}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className= {errors.nombre && touched.nombre ? 'form-control text-input error' : 'form-control text-input'}
+            />
+            {errors.email &&
+            touched.email && <div className="input-feedback">{errors.nombre}</div>}
+        </div>
+        <div className='form-group'>
+            <input
+                id="email"
+                placeholder="mi correo"
+                type="text"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className={errors.email && touched.email ? 'form-control text-input error' : 'form-control text-input'}
+            />
+            {errors.email &&
+            touched.email && <div className="input-feedback">{errors.email}</div>}
+        </div>
+        
+        <div className='form-group'>
+            <input
+                id="tel"
+                placeholder="mi teléfono"
+                type="tel"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className={errors.tel && touched.tel ? 'form-control text-input error' : 'form-control text-input'}
+            />
+            {errors.tel &&
+            touched.tel && <div className="input-feedback">{errors.tel}</div>}
+        </div>
+        <button type="button" disabled={isSubmitting} className='btn btn-dark btn-lg btn-block my-5'>
+            enviar
+        </button>
+        </form>
   );
 };
 
